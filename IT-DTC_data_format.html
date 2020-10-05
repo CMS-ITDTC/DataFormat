@@ -1,0 +1,629 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.1.5.2 (Linux)"/>
+	<meta name="created" content="2020-10-05T13:09:10.054284356"/>
+	<meta name="changed" content="2020-10-05T16:56:03.441632768"/>
+	
+	<style type="text/css">
+		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Liberation Sans"; font-size:x-small }
+		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+		comment { display:none;  } 
+	</style>
+	
+</head>
+
+<body>
+<hr>
+	<p><center>
+		<h1>Overview</h1>
+		<A HREF="#table0">IT-DTC Data Format</A><br>
+		<A HREF="#table1">S-link Rocket payload</A><br>
+		
+	</center></p>
+<hr>
+<A NAME="table0"><h1>Sheet 1: <em>IT-DTC Data Format</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup span="2" width="48"></colgroup>
+	<colgroup span="16" width="29"></colgroup>
+	<colgroup width="80"></colgroup>
+	<colgroup width="286"></colgroup>
+	<tr>
+		<td colspan=9 height="35" align="center" valign=middle><b>Inner-Tracker DAQ/LUMI data format</b></td>
+		<td colspan=4 align="center" valign=middle><b>Version 1.3</b></td>
+		<td colspan=5 align="center" valign=middle sdnum="1033;0;MM/DD/YY HH:MM AM/PM"><b>Date: 2020-10-05</b></td>
+		<td align="center" valign=middle><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="17" align="center" valign=middle><br></td>
+		<td align="left"><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle sdnum="1033;0;MM/DD/YY HH:MM AM/PM"><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="center" valign=middle sdnum="1033;0;MM/DD/YY HH:MM AM/PM"><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="35" align="left"><br></td>
+		<td align="center" valign=middle>Bit #</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="15" sdnum="1033;">15</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="14" sdnum="1033;">14</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="13" sdnum="1033;">13</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="12" sdnum="1033;">12</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="11" sdnum="1033;">11</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="10" sdnum="1033;">10</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="9" sdnum="1033;">9</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="8" sdnum="1033;">8</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="7" sdnum="1033;">7</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="6" sdnum="1033;">6</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="5" sdnum="1033;">5</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="4" sdnum="1033;">4</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="3" sdnum="1033;">3</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="2" sdnum="1033;">2</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="1" sdnum="1033;">1</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 3px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td rowspan=2 align="center" valign=middle bgcolor="#800080">S-link 128b order (following page)</td>
+		<td rowspan=2 align="center" valign=middle><b><font size=3>Notes</font></b></td>
+	</tr>
+	<tr>
+		<td height="35" align="right" valign=middle>Word </td>
+		<td align="left"><br></td>
+		</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">0x00000000</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=8 align="center" valign=middle bgcolor="#FFBF00">Magic #1 (0xC3)</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=middle bgcolor="#FFBF00">Ver Major (1)</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=5 align="center" valign=middle bgcolor="#FFBF00">Ver Minor (3)</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="7" sdnum="1033;">7</td>
+		<td align="left">3 bit major version, 5 bit minor version</td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">0x00000001</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=4 align="center" valign=middle bgcolor="#FFBF00">Error Flags</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=12 align="center" valign=middle bgcolor="#FFBF00">Chip Count</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="6" sdnum="1033;">6</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">0x00000002</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#FFBF00">Reserved</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="5" sdnum="1033;">5</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">0x00000003</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=4 align="center" valign=middle bgcolor="#FFBF00">Trig source</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=12 align="center" valign=middle bgcolor="#FFBF00">BX</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="4" sdnum="1033;">4</td>
+		<td align="left">Trig source: bit 0→ TCDS; bit 1 → LUMI</td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">0x00000004</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#FFBF00">Orbit # MSBs</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="3" sdnum="1033;">3</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">0x00000005</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#FFBF00">Orbit # LSBs</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="2" sdnum="1033;">2</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">0x00000006</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#FFBF00">Reserved</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="1" sdnum="1033;">1</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">0x00000007</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#FFBF00">Reserved</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="0" sdnum="1033;">0</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">0x00000008</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#3465A4">Chip 1 offset (in 16-bit words)(MSBs)</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="7" sdnum="1033;">7</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">0x00000009</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#3465A4">Chip 1 offset (in 16-bit words)(LSBs)</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="6" sdnum="1033;">6</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#729FCF"><b>…</b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle bgcolor="#BF819E"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#729FCF">Chip N offset (MSBs)</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#3465A4">Chip N offset (LSBs)</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#3465A4">Padding to 128 bit word size</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="0" sdnum="1033;">0</td>
+		<td align="left">padding filled with ‘0’s</td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=4 align="center" valign=middle bgcolor="#00A933">Magic #3 (0xE)</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=4 align="center" valign=middle bgcolor="#00A933">Res</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=4 align="center" valign=middle bgcolor="#00A933">Error flags</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=4 align="center" valign=middle bgcolor="#00A933">End bit #</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="7" sdnum="1033;">7</td>
+		<td align="left">Error flag bit 0 → LOS ; bit 1 → time-out</td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#00A933">Chip 1 size (in 16-bit words)</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="6" sdnum="1033;">6</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#77BC65">Raw chip 1 binary data</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=9 align="center" valign=middle bgcolor="#BF819E"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#77BC65">…</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=10 align="center" valign=middle bgcolor="#77BC65"><font color="#000000">Raw chip 1 binary data</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=6 align="center" valign=middle bgcolor="#069A2E">Padding bits (End bit #)</td>
+		<td align="left">Unused bits are padding with ‘0’s </td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#81D41A"><b>...</b></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=4 align="center" valign=middle bgcolor="#00A933">Magic #3 (0xE)</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=4 align="center" valign=middle bgcolor="#00A933">Res</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=4 align="center" valign=middle bgcolor="#00A933">Error flags</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=4 align="center" valign=middle bgcolor="#00A933">End bit #</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#00A933">Chip N size (in 16-bit words)</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#77BC65">Raw chip N binary data</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#77BC65">…</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=6 align="center" valign=middle bgcolor="#77BC65"><font color="#000000">Raw chip N binary data</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=10 align="center" valign=middle bgcolor="#069A2E">Padding bits (End bit #)</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#81D41A"><b>Padding to 128 bit word size</b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="0" sdnum="1033;">0</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=8 align="center" valign=middle bgcolor="#FFBF00">Magic #2 (0x3C)</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=8 align="center" valign=middle bgcolor="#FFBF00">Reserved</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="7" sdnum="1033;">7</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#FFBF00">Reserved</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="6" sdnum="1033;">6</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#FFBF00">Reserved</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="5" sdnum="1033;">5</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#FFBF00">Reserved</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="4" sdnum="1033;">4</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#FFBF00">Reserved</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="3" sdnum="1033;">3</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#FFBF00">Reserved</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="2" sdnum="1033;">2</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">…</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#FFBF00">Reserved</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="1" sdnum="1033;">1</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 3px solid #000000" colspan=2 height="17" align="center" valign=middle bgcolor="#FFFFFF">END</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=16 align="center" valign=middle bgcolor="#FFBF00">Reserved</td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" bgcolor="#BF819E" sdval="0" sdnum="1033;">0</td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="17" align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="center"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td colspan=19 height="17" align="center" valign=middle>Max size = 8+8+((2 + 2 + MAX_CHIP_SIZE) * N_CHIPS) = 16+ (~54000 * N_CHIPS)</td>
+		<td align="left"><br></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+<hr>
+<A NAME="table1"><h1>Sheet 2: <em>S-link Rocket payload</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="85"></colgroup>
+	<colgroup span="128" width="10"></colgroup>
+	<tr>
+		<td height="35" align="left">Bit position</td>
+		<td colspan=8 align="left" valign=middle sdval="127" sdnum="1033;">127</td>
+		<td colspan=8 align="left" valign=middle sdval="119" sdnum="1033;">119</td>
+		<td colspan=8 align="left" valign=middle sdval="111" sdnum="1033;">111</td>
+		<td colspan=8 align="left" valign=middle sdval="103" sdnum="1033;">103</td>
+		<td colspan=8 align="left" valign=middle sdval="95" sdnum="1033;">95</td>
+		<td colspan=8 align="left" valign=middle sdval="87" sdnum="1033;">87</td>
+		<td colspan=8 align="left" valign=middle sdval="79" sdnum="1033;">79</td>
+		<td colspan=8 align="left" valign=middle sdval="71" sdnum="1033;">71</td>
+		<td colspan=8 align="left" valign=middle sdval="63" sdnum="1033;">63</td>
+		<td colspan=8 align="left" valign=middle sdval="55" sdnum="1033;">55</td>
+		<td colspan=8 align="left" valign=middle sdval="47" sdnum="1033;">47</td>
+		<td colspan=8 align="left" valign=middle sdval="39" sdnum="1033;">39</td>
+		<td colspan=8 align="left" valign=middle sdval="31" sdnum="1033;">31</td>
+		<td colspan=8 align="left" valign=middle sdval="23" sdnum="1033;">23</td>
+		<td colspan=8 align="left" valign=middle sdval="15" sdnum="1033;">15</td>
+		<td colspan=8 align="left" valign=middle sdval="7" sdnum="1033;">7</td>
+		</tr>
+	<tr>
+		<td height="35" align="center">S-Link Header</td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=8 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">BOE</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=4 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">V</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=8 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">rsvd</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=44 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">Global_Event_ID</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=6 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">rsvd</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=2 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">E</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=8 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">Ph. type</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">L1A type &amp; content</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=32 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">Source_ID</font></b></td>
+		</tr>
+	<tr>
+		<td height="35" align="center">S-Link   Payload</td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="7" sdnum="1033;"><b><font color="#FFFFFF">7</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="6" sdnum="1033;"><b><font color="#FFFFFF">6</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="5" sdnum="1033;"><b><font color="#FFFFFF">5</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="4" sdnum="1033;"><b><font color="#FFFFFF">4</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="3" sdnum="1033;"><b><font color="#FFFFFF">3</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="2" sdnum="1033;"><b><font color="#FFFFFF">2</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="1" sdnum="1033;"><b><font color="#FFFFFF">1</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="0" sdnum="1033;"><b><font color="#FFFFFF">0</font></b></td>
+		</tr>
+	<tr>
+		<td height="35" align="center">S-Link   Payload</td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=128 align="center" valign=middle bgcolor="#BF819E"><font color="#FFFFFF">…</font></td>
+		</tr>
+	<tr>
+		<td height="35" align="center">S-Link   Payload</td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="7" sdnum="1033;"><b><font color="#FFFFFF">7</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="6" sdnum="1033;"><b><font color="#FFFFFF">6</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="5" sdnum="1033;"><b><font color="#FFFFFF">5</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="4" sdnum="1033;"><b><font color="#FFFFFF">4</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="3" sdnum="1033;"><b><font color="#FFFFFF">3</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="2" sdnum="1033;"><b><font color="#FFFFFF">2</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="1" sdnum="1033;"><b><font color="#FFFFFF">1</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E" sdval="0" sdnum="1033;"><b><font color="#FFFFFF">0</font></b></td>
+		</tr>
+	<tr>
+		<td height="35" align="center">S-Link  Trailer</td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=8 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">EOE</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=24 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">rsvd</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=20 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">Event_Length</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=12 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">BX_ID</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=32 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">Orbit_ID</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">CRC(16b)</font></b></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#2A6099"><b><font color="#FFFFFF">status</font></b></td>
+		</tr>
+	<tr>
+		<td height="35" align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+	<tr>
+		<td height="35" align="left"><br></td>
+		<td style="border-top: 3px solid #000000; border-bottom: 3px solid #000000; border-left: 3px solid #000000; border-right: 3px solid #000000" colspan=16 align="center" valign=middle bgcolor="#A1467E"><b><font color="#FFFFFF">N</font></b></td>
+		<td colspan=21 align="center" valign=middle><b>Payload 16bit word number</b></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+		<td align="left"><br></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+</body>
+
+</html>
